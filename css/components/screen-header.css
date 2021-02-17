@@ -1,0 +1,41 @@
+.screen-header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+  color: rgba(15, 15, 15, 0.856);
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+  color: rgba(15, 15, 15, 0.856);
+}
+
+.screen-header__dot {
+  color: rgba(600, 0, 0, 0.8);
+  font-size: 50px;
+  position: absolute;
+  top: -15px;
+  right: 18px;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+
+.fa-cog:hover {
+  animation: spin 1s linear infinite;
+}
